@@ -1,0 +1,15 @@
+﻿# GitHub Pages configuration
+title: "Common Knowledge"
+description: "AI Consciousness, Human-AI Co-Evolution, and the Future of Shared Understanding"
+url: "https://pelicansperspective.github.io"
+baseurl: "/Common-Knowledge"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
