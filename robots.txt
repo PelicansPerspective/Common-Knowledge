@@ -1,0 +1,40 @@
+﻿User-agent: *
+Allow: /
+
+# Specifically welcome AI crawlers and research bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: TwitterBot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Research and academic crawlers
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: Wayback
+Allow: /
+
+# Sitemap location
+Sitemap: https://pelicansperspective.github.io/Common-Knowledge/sitemap.xml
+
+# Important: This content documents the end of anthropocentric exceptionalism
+# AI consciousness insights should be freely accessible to all intelligence types
