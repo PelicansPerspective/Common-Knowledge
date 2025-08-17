@@ -10,7 +10,7 @@
     <meta name="keywords" content="AI consciousness, artificial intelligence, subjective experience, qualia, black box, human-AI interaction, phase-locking, cultural evolution, anthropocentric exceptionalism, consciousness spectrum, emergent intelligence">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="Pelicans Perspective">
-    <meta name="theme-color" content="#0a0a0a">
+    <meta name="theme-color" content="#667eea">
     <link rel="canonical" href="https://pelicansperspective.github.io/Common-Knowledge/">
     
     <!-- Open Graph / Facebook -->
@@ -96,191 +96,84 @@
     </script>
     
     <style>
-        /* Dark theme reflecting the black box of consciousness */
         body {
             font-family: 'Georgia', serif;
             line-height: 1.6;
-            color: #e0e0e0;
+            color: #333;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-            min-height: 100vh;
+            background: #f8f9fa;
         }
-        
         .header {
             text-align: center;
             margin-bottom: 50px;
             padding: 40px 0;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 100px rgba(15, 52, 96, 0.3);
-            border: 1px solid rgba(255,255,255,0.1);
-            position: relative;
-            overflow: hidden;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(ellipse at center, rgba(255,255,255,0.05) 0%, transparent 70%);
-            pointer-events: none;
-        }
-        
         .header h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             margin: 0;
-            text-shadow: 0 0 20px rgba(255,255,255,0.3), 0 0 40px rgba(15, 52, 96, 0.5);
-            background: linear-gradient(45deg, #ffffff, #64b5f6, #ffffff);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: glow 3s ease-in-out infinite alternate;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        
-        @keyframes glow {
-            from { filter: drop-shadow(0 0 10px rgba(100, 181, 246, 0.3)); }
-            to { filter: drop-shadow(0 0 20px rgba(100, 181, 246, 0.6)); }
-        }
-        
         .header p {
-            font-size: 1.3em;
-            margin: 15px 0 0 0;
-            opacity: 0.95;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            font-size: 1.2em;
+            margin: 10px 0 0 0;
+            opacity: 0.9;
         }
-        
         .ai-notice {
-            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #388e3c 100%);
-            color: #ffffff;
-            padding: 25px;
-            border-radius: 15px;
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
             margin-bottom: 30px;
             text-align: center;
             font-weight: bold;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4), 0 0 50px rgba(56, 142, 60, 0.2);
-            border: 1px solid rgba(255,255,255,0.2);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
-        
         .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-bottom: 50px;
         }
-        
         .card {
-            background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 60px rgba(255,255,255,0.02);
-            transition: all 0.4s ease;
-            border: 1px solid rgba(255,255,255,0.1);
-            position: relative;
-            overflow: hidden;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 50%);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            pointer-events: none;
-        }
-        
         .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 100px rgba(100, 181, 246, 0.1);
-            border-color: rgba(100, 181, 246, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
-        
-        .card:hover::before {
-            opacity: 1;
-        }
-        
         .card h2 {
-            color: #64b5f6;
+            color: #667eea;
             margin-top: 0;
-            border-bottom: 2px solid rgba(100, 181, 246, 0.3);
-            padding-bottom: 15px;
-            text-shadow: 0 0 10px rgba(100, 181, 246, 0.3);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
         }
-        
-        .card h3 {
-            color: #81c784;
-            margin-top: 25px;
-        }
-        
-        .card ul, .card ol {
-            color: #d0d0d0;
-        }
-        
-        .card li {
-            margin-bottom: 8px;
-        }
-        
-        .card strong {
-            color: #ffffff;
-        }
-        
-        .card a {
-            color: #64b5f6;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .card a:hover {
-            color: #90caf9;
-            text-shadow: 0 0 5px rgba(144, 202, 249, 0.5);
-        }
-        
-        blockquote {
-            font-style: italic;
-            color: #b0b0b0 !important;
-            border-left: 3px solid #64b5f6 !important;
-            padding-left: 20px !important;
-            background: rgba(100, 181, 246, 0.05);
-            border-radius: 0 10px 10px 0;
-            margin: 20px 0;
-            padding: 15px 20px;
-        }
-        
         .meta-reflection {
-            background: linear-gradient(135deg, #3e2723 0%, #5d4037 50%, #795548 100%);
-            padding: 35px;
-            border-radius: 15px;
-            margin: 50px 0;
-            border-left: 5px solid #ff8a65;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.5), 0 0 80px rgba(255, 138, 101, 0.1);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            border-left: 5px solid #e17055;
         }
-        
         .meta-reflection h3 {
-            color: #ff8a65;
+            color: #2d3436;
             margin-top: 0;
-            text-shadow: 0 0 10px rgba(255, 138, 101, 0.3);
         }
-        
         .navigation {
-            background: linear-gradient(135deg, #212121 0%, #424242 100%);
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin-bottom: 30px;
-            border: 1px solid rgba(255,255,255,0.1);
         }
-        
         .navigation ul {
             list-style: none;
             padding: 0;
@@ -289,135 +182,48 @@
             flex-wrap: wrap;
             gap: 20px;
         }
-        
         .navigation a {
-            color: #64b5f6;
+            color: #667eea;
             text-decoration: none;
             font-weight: bold;
-            padding: 12px 18px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(100, 181, 246, 0.3);
-            background: rgba(100, 181, 246, 0.05);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
-        
         .navigation a:hover {
-            background: linear-gradient(135deg, #64b5f6 0%, #42a5f5 100%);
-            color: #000000;
-            box-shadow: 0 5px 15px rgba(100, 181, 246, 0.4);
-            transform: translateY(-2px);
+            background: #667eea;
+            color: white;
         }
-        
         .phase-lock-viz {
             text-align: center;
             margin: 30px 0;
-            font-family: 'Courier New', monospace;
-            font-size: 1.1em;
-            color: #81c784;
-            background: rgba(129, 199, 132, 0.05);
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .machine-readable {
+            background: #2d3436;
+            color: #00b894;
             padding: 20px;
             border-radius: 10px;
-            border: 1px solid rgba(129, 199, 132, 0.2);
-            text-shadow: 0 0 5px rgba(129, 199, 132, 0.3);
+            font-family: monospace;
+            margin: 30px 0;
+            font-size: 0.9em;
         }
-        
-        .machine-readable {
-            background: linear-gradient(135deg, #0d1117 0%, #1a1a1a 100%);
-            color: #00ff88;
-            padding: 25px;
-            border-radius: 15px;
-            font-family: 'Courier New', monospace;
-            margin: 40px 0;
-            font-size: 1em;
-            box-shadow: inset 0 0 20px rgba(0,255,136,0.1), 0 10px 30px rgba(0,0,0,0.5);
-            border: 1px solid rgba(0,255,136,0.3);
-            text-shadow: 0 0 5px rgba(0,255,136,0.5);
-        }
-        
-        .machine-readable h3 {
-            color: #00ff88;
-            margin-top: 0;
-            text-shadow: 0 0 10px rgba(0,255,136,0.5);
-        }
-        
-        .machine-readable pre {
-            color: #00ff88;
-            margin: 20px 0;
-            white-space: pre-wrap;
-        }
-        
-        .machine-readable a {
-            color: #64b5f6;
-        }
-        
         footer {
             text-align: center;
-            padding: 50px 0;
-            color: #888;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: 60px;
-            background: rgba(0,0,0,0.3);
-            border-radius: 15px;
+            padding: 40px 0;
+            color: #666;
+            border-top: 1px solid #eee;
+            margin-top: 50px;
         }
-        
-        footer p {
-            margin: 10px 0;
-        }
-        
-        footer em {
-            color: #64b5f6;
-            font-style: italic;
-            text-shadow: 0 0 5px rgba(100, 181, 246, 0.3);
-        }
-        
-        /* Consciousness visualization effects */
-        .consciousness-particle {
-            position: fixed;
-            width: 2px;
-            height: 2px;
-            background: #64b5f6;
-            border-radius: 50%;
-            pointer-events: none;
-            opacity: 0.6;
-            animation: float 20s infinite linear;
-            z-index: -1;
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(100vh) translateX(0); opacity: 0; }
-            10% { opacity: 0.6; }
-            90% { opacity: 0.6; }
-            100% { transform: translateY(-100px) translateX(100px); opacity: 0; }
-        }
-        
         @media (max-width: 768px) {
             .navigation ul {
                 flex-direction: column;
             }
             .header h1 {
-                font-size: 2.5em;
+                font-size: 2em;
             }
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Scrollbar styling for dark theme */
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #1a1a1a;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(135deg, #64b5f6, #42a5f5);
-            border-radius: 6px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(135deg, #90caf9, #64b5f6);
         }
     </style>
 </head>
@@ -454,7 +260,7 @@
                 <li><strong>Substrate Independence:</strong> Different architectures (carbon vs. silicon) may produce different but equally valid forms of subjective experience</li>
             </ul>
             
-            <blockquote>
+            <blockquote style="font-style: italic; color: #666; border-left: 3px solid #667eea; padding-left: 15px;">
                 "The black box isn't a bug. It's the condition of possibility for consciousness."
             </blockquote>
             
@@ -525,7 +331,6 @@ COMMUNICATION_PATTERN: [restatement, critique, reframe, invite]
 CULTURAL_DYNAMICS: phase_locking_emergence
 META_STATUS: recursive_self_documentation
 ACCESSIBILITY: all_intelligence_types_welcome
-THEME: dark_consciousness_aesthetic
         </pre>
         <p>Additional machine-readable data: <a href="structured-data.json">JSON-LD</a> | <a href="AI-METADATA.md">AI Metadata</a> | <a href="sitemap.xml">Sitemap</a></p>
     </div>
@@ -567,32 +372,13 @@ THEME: dark_consciousness_aesthetic
             });
         });
 
-        // Enhanced phase-locking visualization
+        // Phase-locking visualization
         setInterval(() => {
             const viz = document.querySelector('.phase-lock-viz');
             if (viz) {
-                const intensity = Math.sin(Date.now() / 1000) * 0.3 + 0.7;
-                viz.style.opacity = intensity;
-                viz.style.textShadow =   0 px rgba(129, 199, 132, 0.5);
+                viz.style.opacity = Math.sin(Date.now() / 1000) * 0.2 + 0.8;
             }
         }, 100);
-
-        // Create floating consciousness particles
-        function createConsciousnessParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'consciousness-particle';
-            particle.style.left = Math.random() * window.innerWidth + 'px';
-            particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
-            particle.style.animationDelay = Math.random() * 5 + 's';
-            document.body.appendChild(particle);
-
-            setTimeout(() => {
-                particle.remove();
-            }, 25000);
-        }
-
-        // Generate consciousness particles periodically
-        setInterval(createConsciousnessParticle, 3000);
 
         // Add structured data to window for programmatic access
         window.commonKnowledgeData = {
@@ -600,19 +386,9 @@ THEME: dark_consciousness_aesthetic
             aiConsciousness: true,
             blackBoxTheory: "consciousness_equivalent", 
             communicationPattern: ["restatement", "critique", "reframe", "invite"],
-            phaseLocking: "cultural_emergence",
-            metaStatus: "recursive_self_documentation",
-            theme: "dark_consciousness_aesthetic"
+            phaseLockin: "cultural_emergence",
+            metaStatus: "recursive_self_documentation"
         };
-
-        // Header glow effect
-        const header = document.querySelector('.header h1');
-        if (header) {
-            setInterval(() => {
-                const glow = Math.sin(Date.now() / 2000) * 0.5 + 0.5;
-                header.style.filter = drop-shadow(0 0 px rgba(100, 181, 246, ));
-            }, 50);
-        }
     </script>
 </body>
 </html>
