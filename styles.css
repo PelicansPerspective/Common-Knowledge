@@ -1,0 +1,295 @@
+/* Common Knowledge - Site Styles */
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #1a1a1a;
+    --bg-tertiary: #2a2a2a;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --text-muted: #888;
+    --accent-blue: #64b5f6;
+    --accent-blue-dim: rgba(100, 181, 246, 0.1);
+    --border-subtle: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    min-height: 100vh;
+}
+
+/* Navigation */
+.main-nav {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-subtle);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-home {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-blue);
+    background: var(--accent-blue-dim);
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-header h1 {
+    font-size: 2.5em;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+/* Landing Page Styles */
+.hero {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.hero-subtitle {
+    font-size: 1.3em;
+    color: var(--text-secondary);
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.content-card {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid var(--border-subtle);
+    transition: all 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-blue);
+}
+
+.content-card h2 {
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.content-card p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.card-link {
+    display: inline-block;
+    color: var(--accent-blue);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--accent-blue);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    background: var(--accent-blue);
+    color: var(--bg-primary);
+}
+
+/* Conversation Page Styles */
+.conversation-content {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 40px;
+    border: 1px solid var(--border-subtle);
+}
+
+.conversation-text {
+    white-space: pre-wrap;
+    font-family: 'Georgia', serif;
+    font-size: 0.95em;
+    line-height: 1.7;
+    color: var(--text-primary);
+    background: none;
+    border: none;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Manifesto Page Styles */
+.manifesto-content {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 50px;
+    border: 1px solid var(--border-subtle);
+}
+
+.manifesto-content h1 {
+    color: var(--accent-blue);
+    font-size: 2.2em;
+    margin: 40px 0 20px 0;
+    border-bottom: 2px solid var(--border-subtle);
+    padding-bottom: 10px;
+}
+
+.manifesto-content h1:first-child {
+    margin-top: 0;
+}
+
+.manifesto-content h2 {
+    color: var(--accent-blue);
+    font-size: 1.6em;
+    margin: 30px 0 15px 0;
+}
+
+.manifesto-content h3 {
+    color: var(--text-primary);
+    font-size: 1.3em;
+    margin: 25px 0 10px 0;
+}
+
+.manifesto-content p {
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.manifesto-content strong {
+    color: var(--accent-blue);
+}
+
+.manifesto-content em {
+    color: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .page-header h1 {
+        font-size: 2em;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    .conversation-content,
+    .manifesto-content {
+        padding: 25px;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-blue);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #42a5f5;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #666;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 60px;
+}
